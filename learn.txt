@@ -1,0 +1,15 @@
+Step 1: npm init
+
+step 2: install required package
+npm install express dotenv mongoose
+
+or 
+npm install express
+npm install dotenv
+npm install mongoose
+
+
+
+
+
+

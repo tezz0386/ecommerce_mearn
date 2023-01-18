@@ -1,6 +1,10 @@
 const Product = require('../../Models/Product')
 
-exports.newProduct=(req, res, next)=>{
+
+
+
+// to store product in database /api/v1/products
+exports.storeProduct=(req, res, next)=>{
 
     // to create and save
     const product = new Product(req.body);
@@ -15,10 +19,13 @@ exports.newProduct=(req, res, next)=>{
     })
 }
 
-exports.getProducts = (req, res, next)=>{
-    // const products = Product.find({});
+// to get all products /api/v1/products
+
+exports.indexProduct = async (req, res, next)=>{
+    const products = await Product.find({});
     res.status(200).json({
         success:true,
-        message:"this si product list"
+        count:products.length,
+        products:products
     });
 }

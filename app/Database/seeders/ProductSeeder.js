@@ -3,8 +3,6 @@ const products = require('../../Data/products');
 const dotenv = require('dotenv');
 const connectDatabase = require('../../config/database')
 
-const { connect } = require('mongoose');
-
 
 dotenv.config({path:'app/config/config.env'})
 

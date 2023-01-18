@@ -5,10 +5,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -24,10 +24,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -43,10 +43,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -62,10 +62,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -81,10 +81,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -100,10 +100,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -119,10 +119,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -138,10 +138,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -157,10 +157,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",
@@ -176,10 +176,10 @@
         "description":"This is for test",
         "price":500,
         "rattings":5,
-        "image":[
+        "images":[
             {
                 "public_id":"this_is_for_test",
-                "url":"localhost:3000/api/v1/products"
+                "url":"https://np-live-21.slatic.net/kf/Sde3ce9c547924c78afbd4a6a0ea0e121m.jpg"
             }
         ],
         "category":"Electronics",

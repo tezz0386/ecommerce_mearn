@@ -5,12 +5,6 @@ const CatchAsyncError = require('../../Middleware/CatchAsyncError');
 
 // to store product in database /api/v1/products
 exports.storeProduct= CatchAsyncError(async (req, res, next)=>{
-
-    // to create and save
-    // const product = new Product(req.body);
-    // product.save();
-    
-    // or to create and save
     const product = await Product.create(req.body);
     
     res.status(201).json({

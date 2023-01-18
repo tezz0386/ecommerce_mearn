@@ -1,37 +1,39 @@
 const Product = require('../../Models/Product')
 const ErrorHandler = require('../../../vendor/Error/ErrorHandller');
+const CatchAsyncError = require('../../Middleware/CatchAsyncError');
+
 
 // to store product in database /api/v1/products
-exports.storeProduct=(req, res, next)=>{
+exports.storeProduct= CatchAsyncError(async (req, res, next)=>{
 
     // to create and save
-    const product = new Product(req.body);
-    product.save();
+    // const product = new Product(req.body);
+    // product.save();
     
     // or to create and save
-    // const product = Product.create(req.body);
-
+    const product = await Product.create(req.body);
+    
     res.status(201).json({
         success:true,
         product
     })
-}
+})
 
 // to get all products /api/v1/products
 
-exports.indexProduct = async (req, res, next)=>{
+exports.indexProduct = CatchAsyncError(async (req, res, next)=>{
     const products = await Product.find({});
     res.status(200).json({
         success:true,
         count:products.length,
         products:products
     });
-}
+})
 
 
 // to get single products /api/v1/products/:id
 
-exports.showProduct = async (req, res, next)=>{
+exports.showProduct = CatchAsyncError(async (req, res, next)=>{
     const product = await Product.findById(req.params.id);
 
     if(!product){
@@ -41,10 +43,10 @@ exports.showProduct = async (req, res, next)=>{
         success:true,
         product
     });
-}
+})
 
 // to update products /api/v1/products/:id
-exports.updateProduct = async (req, res, next)=>{
+exports.updateProduct = CatchAsyncError(async (req, res, next)=>{
     const product = await Product.findById(req.params.id);
     if(!product){
         if(!product){
@@ -56,9 +58,9 @@ exports.updateProduct = async (req, res, next)=>{
         success:true,
         product
     })
-};
+})
 
-exports.deleteProduct = async (req, res, next)=>{
+exports.deleteProduct = CatchAsyncError(async (req, res, next)=>{
     const product = await Product.findById(req.params.id);
     if(!product){
         if(!product){
@@ -70,4 +72,4 @@ exports.deleteProduct = async (req, res, next)=>{
         success:true,
         message:'product deleted'
     });
-}
+})

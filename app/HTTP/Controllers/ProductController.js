@@ -1,7 +1,5 @@
 const Product = require('../../Models/Product')
-
-
-
+const ErrorHandler = require('../../../vendor/Error/ErrorHandller');
 
 // to store product in database /api/v1/products
 exports.storeProduct=(req, res, next)=>{
@@ -35,11 +33,9 @@ exports.indexProduct = async (req, res, next)=>{
 
 exports.showProduct = async (req, res, next)=>{
     const product = await Product.findById(req.params.id);
+
     if(!product){
-        return res.status(404).json({
-            success:false,
-            message:'product not found'
-        })
+        return next(new ErrorHandler("Product Not Found", 404));
     }
     res.status(200).json({
         success:true,
